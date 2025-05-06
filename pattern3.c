@@ -4,17 +4,18 @@ int main()
     int x;
     scanf("%d", &x);
 
-    int tmp = x-1;
-    for (int i = 1; i <= x; i++)
+    int tmp = 0;
+
+    for (int i = x; i >= 1; i--)
     {
-        for (int a = tmp; a > 0; a--)
+        for (int a = 0; a < tmp; a++)
         {
             printf(" ");
         }
-        tmp--;
+        tmp++;
         for (int j = 1; j <= i; j++)
         {
-            printf("* ");
+            printf("*");
         }
         printf("\n");
     }
